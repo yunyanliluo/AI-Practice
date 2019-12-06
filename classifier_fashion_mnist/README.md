@@ -1,6 +1,6 @@
-### *fashion_mnist*
+# fashion_mnist
 
-##### All-in-one code
+## All-in-one code
 
 - fashion_class_pub_newest.py
 
@@ -10,7 +10,7 @@
 
   It includes all the points of writing a NN according to teacher's guidance. 
 
-##### Classic networks
+## Classic networks
 
 - fashion_alexnet.py
 
@@ -20,7 +20,7 @@
 
   It uses an lenet model to train the dataset.
 
-##### Standard references
+## Standard references
 
 - Fashion_MNIST_app.py
 
