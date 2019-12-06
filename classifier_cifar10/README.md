@@ -1,4 +1,4 @@
-# cifar_10
+# Cifar10 Classifier
 
 Dataset: cifar-10.zip
 
