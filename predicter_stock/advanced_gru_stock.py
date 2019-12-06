@@ -16,13 +16,13 @@ training_set = maotai.iloc[0:2186 - 300, 1:6].values
 test_set = maotai.iloc[2186 - 300:, 1:6].values
 # print(training_set.shape)
 # print(training_set)
-# ¹éÒ»»¯
+# å½’ä¸€åŒ–
 sc = MinMaxScaler(feature_range=(0, 1))
 training_set_scaled = sc.fit_transform(training_set)
 test_set_scaled = sc.transform(test_set)
 
-# ±êÇ©¹éÒ»»¯,ÌáÈ¡sc_label²ÎÊı½â¾öÑµÁ·Êı¾İ(5ÁĞ)ºÍ±êÇ©ÁĞÊı(1ÁĞ)²»Í¬µÄµ¼ÖÂ·´¹éÒ»»¯³ö´íÎÊÌâ£¬ÓÃÓÚºóĞø±êÇ©·´¹éÒ»»¯£¬×÷¹É¼ÛÔ¤²âÖµÓëÕæÊµÖµµÄ¶Ô±ÈÍ¼Ê±ÓÃ£¬²»¶ÔÊµ¼ÊÑµÁ·²úÉúÓ°Ïì
-# test_set_scaledÖĞµÄ±êÇ©ÁĞºÍtest_set_label_scaledÖµÊÇÒ»ÑùµÄ
+# æ ‡ç­¾å½’ä¸€åŒ–,æå–sc_labelå‚æ•°è§£å†³è®­ç»ƒæ•°æ®(5åˆ—)å’Œæ ‡ç­¾åˆ—æ•°(1åˆ—)ä¸åŒçš„å¯¼è‡´åå½’ä¸€åŒ–å‡ºé”™é—®é¢˜ï¼Œç”¨äºåç»­æ ‡ç­¾åå½’ä¸€åŒ–ï¼Œä½œè‚¡ä»·é¢„æµ‹å€¼ä¸çœŸå®å€¼çš„å¯¹æ¯”å›¾æ—¶ç”¨ï¼Œä¸å¯¹å®é™…è®­ç»ƒäº§ç”Ÿå½±å“
+# test_set_scaledä¸­çš„æ ‡ç­¾åˆ—å’Œtest_set_label_scaledå€¼æ˜¯ä¸€æ ·çš„
 sc_label = MinMaxScaler(feature_range=(0, 1))
 traing_set_label_scaled = sc_label.fit_transform(training_set[:,0:1])
 test_set_label_scaled = sc_label.transform(test_set[:,0:1])
@@ -36,7 +36,7 @@ x_test = []
 y_test = []
 
 #                     2186-300
-# Ç°60ÌìµÄÊı¾İµ±×öÊäÈëx,µÚ61ÌìÊı¾İµ±×÷Ä¿±êy
+# å‰60å¤©çš„æ•°æ®å½“åšè¾“å…¥x,ç¬¬61å¤©æ•°æ®å½“ä½œç›®æ ‡y
 for i in range(60, len(training_set_scaled)):
     x_train.append(training_set_scaled[i - 60:i, 0:5])
     y_train.append(training_set_scaled[i, 0])
@@ -99,7 +99,7 @@ model.summary()
 
 model.evaluate(x_test,y_test)
 
-# file = open('./weights.txt', 'w')  # ²ÎÊıÌáÈ¡
+# file = open('./weights.txt', 'w')  # å‚æ•°æå–
 # for v in model.trainable_variables:
 #     file.write(str(v.name) + '\n')
 #     file.write(str(v.shape) + '\n')
@@ -120,7 +120,7 @@ plt.show()
 ################## predict ######################
 
 predicted_stock_price = model.predict(x_test)
-# ¶ÔÔ¤²âÊı¾İ»¹Ô­¡£
+# å¯¹é¢„æµ‹æ•°æ®è¿˜åŸã€‚
 predicted_stock_price = sc_label.inverse_transform(predicted_stock_price)
 
 # print(predicted_stock_price)
