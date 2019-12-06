@@ -1,6 +1,6 @@
-### *IRIS Classifier*
+# *IRIS Classifier*
 
-#### Three IRIS classifiers without optimizers
+## Three IRIS classifiers without optimizers
 
 - classifier1_hw.py
 
@@ -26,6 +26,6 @@
 
 However, classifier1_hw.py needs to improve. The dense layer needs an extra activation function, while the output layer only needs linear processing.  
 
-#### Other classifiers with optimizers
+## Other classifiers with optimizers
 
 These are classifiers with optimizers including SGD, SGD(momentum), adam, adagrad, adadelta. 
