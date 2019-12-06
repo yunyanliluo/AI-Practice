@@ -1,4 +1,4 @@
-# fashion_mnist
+# Fashion Mnist Classifier
 
 ## Dataset
 
