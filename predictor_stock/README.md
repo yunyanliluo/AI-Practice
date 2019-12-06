@@ -1,4 +1,6 @@
-### stock prediction
+# stock prediction
+
+Dataset: SH600519.csv
 
 - rnn_stock.py
 
