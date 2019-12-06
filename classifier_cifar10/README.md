@@ -4,7 +4,7 @@ Dataset: cifar-10.zip
 
 - cifar10_hw.py
 
-  My homework code. It improved the model from VGGnet16. It reaches the accuracy of 0.9115. 
+  My homework code. It improved the model of VGGnet16. It reaches the accuracy of 0.9115. 
 
 - cifar10_allinone.py
 
