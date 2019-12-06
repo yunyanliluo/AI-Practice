@@ -1,4 +1,6 @@
-### *cifar_10*
+# cifar_10
+
+Dataset: cifar-10.zip
 
 - cifar10_hw.py
 
