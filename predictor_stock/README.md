@@ -1,4 +1,4 @@
-# Stock Prediction
+# Stock Predicter
 
 Dataset: SH600519.csv
 
