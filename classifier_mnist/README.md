@@ -1,4 +1,4 @@
-# mnist
+# Mnist Classifier
 
 Dataset: mnist.rar
 
