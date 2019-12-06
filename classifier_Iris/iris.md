@@ -1,4 +1,8 @@
-# *IRIS Classifier*
+# IRIS Classifier
+
+## Dataset
+
+iris.txt
 
 ## Three IRIS classifiers without optimizers
 
