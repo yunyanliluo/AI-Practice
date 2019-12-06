@@ -1,5 +1,9 @@
 # fashion_mnist
 
+## Dataset
+
+fashion_mnist.rar
+
 ## All-in-one code
 
 - fashion_class_pub_newest.py
