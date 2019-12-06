@@ -1,6 +1,6 @@
 # mnist
 
-Dataset:mnist.rar
+Dataset: mnist.rar
 
 - mnist_train.py
 
